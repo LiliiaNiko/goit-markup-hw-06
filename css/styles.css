@@ -679,10 +679,7 @@ body {
 .form-field {
   display: flex;
   flex-direction: column;
-  /*margin-bottom: 10px;*/
-}
-.form-field:nth-child(4) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .form-field input {
   margin-bottom: 0;
@@ -704,7 +701,7 @@ body {
 }
 .modal-input-wrap {
   position: relative;
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
 }
 .modal-icon {
   position: absolute;
@@ -752,6 +749,13 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.form-field-check {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
 .modal-check-text {
   font-size: 14px;
   line-height: 1.71px;
@@ -759,6 +763,7 @@ body {
   color: #757575;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .modal-check-text span {
   width: 16px;
@@ -766,13 +771,13 @@ body {
   border: 2px solid var(--first-text-color);
   border-radius: 2px;
   margin-right: 7px;
-  margin-left: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .modal-check-icon {
   fill: transparent;
+  padding-left: 0;
 }
 .modal-check:checked + .modal-check-text > span {
   background-color: var(--accent-color);
